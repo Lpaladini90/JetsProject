@@ -12,8 +12,9 @@ public class DIYJet extends Jet implements CombatReady{
 	}
 
 	public String toString() {
-		String output = "Fighter Jet:  " + getMake() + " | " + getModel() + " | " 
-	+ getSpeedMPH() + " | " + getRange() + " | " + getPurchasePrice();
+		String output = "\nFighter Jet   |  Make: " + getMake() + " | " + "Model: " + getModel() + " | " 
+	+ "Speed(MPH): " + getSpeedMPH() + " | " + " Range: " + getRange() + " NM | " + "Price: $" + getPurchasePrice();
+		
 		return output;
 	}
 
