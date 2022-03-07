@@ -21,7 +21,7 @@ public class PassengerJet extends Jet implements Travel{
 	
 	@Override
 	public void travel() {
-		System.out.println("Lets travel the world!");
+		System.out.println("Let's travel the world! So many places to go and see!");
 		
 	}
 	

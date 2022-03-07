@@ -2,7 +2,6 @@ package com.skilldistillery.jets.entities;
 
 public class DIYJet extends Jet implements CombatReady{
 
-
 	
 	public DIYJet() {
 	}

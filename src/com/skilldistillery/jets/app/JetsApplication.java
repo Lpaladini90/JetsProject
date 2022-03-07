@@ -6,7 +6,7 @@ import com.skilldistillery.jets.entities.AirField;
 
 public class JetsApplication {
 
-	static Scanner sc = new Scanner(System.in);
+	private Scanner sc = new Scanner(System.in);
 
 	private AirField airField;
 

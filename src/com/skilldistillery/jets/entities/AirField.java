@@ -79,7 +79,7 @@ public class AirField {
 	public void fly() {
 		for (int i = 0; i < jetFleet.size(); i++) {
 			double hours = ((jetFleet.get(i).getRange()) / (jetFleet.get(i).getSpeedMPH()));
-			System.out.printf("\nThe " + jetFleet.get(i).makeModel()
+			System.out.printf("\nThe " + jetFleet.get(i).toString()
 					+ " will run out of fuel in %.2f hours, better refuel before that!", hours);
 
 		}
@@ -270,11 +270,19 @@ public class AirField {
 
 				case 1:
 					System.out.println("NICE YOU GOT EM!");
+					
+					System.out.println("\n\n Whew Close call! Lets decende and land ");
+					System.out.println("\n\n Get your landing gear open! ");
+					System.out.println("\n\n Landed complete. Go get yourself a beer you deserve it after that dogfight!"); 
 					fight = false;
 					maneuver = false;
 					break;
 				case 2:
 					System.out.println("NICE YOU GOT EM!");
+					
+					System.out.println("\n\n Whew Close call! Lets decende and land ");
+					System.out.println("\n\n Get your landing gear open! ");
+					System.out.println("\n\n Landed complete. Go get yourself a beer you deserve it after that dogfight!");
 					fight = false;
 					maneuver = false;
 					break;
@@ -287,10 +295,8 @@ public class AirField {
 				break;
 			}
 			}
-			System.out.println("\n\n Whew Close call! Lets decende and land ");
-			System.out.println("\n\n Get your landing gear open! ");
-			System.out.println("\n\n Landed complete. Go get your self a beer you deserve it after that dogfight!");
 			
+			System.out.println(" Nice flying Ace. ");
 			System.out.println(" * Returning to main menu * ");
 
 		}
