@@ -14,7 +14,7 @@ public class CargoJet extends Jet implements CargoCarrier {
 	public String toString() {
 		String output = "\nCargo Jet     |  Make: " + getMake() + " | " + "Model: " + getModel() + " | "
 				+ "Speed(MPH): " + getSpeedMPH() + " | " + " Range: " + getRange() + " NM | " + "Price: $" + getPurchasePrice();
-		
+		 
 		return output;
 	}
 	public String makeModel() {
