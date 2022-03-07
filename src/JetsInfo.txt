@@ -1,7 +1,0 @@
-LockHeed, F22 Raptor, 1,500 MPH, 1,850, 165000000
-LockHeed, F35 Lightning, 1,200 MPH, 1,200, 78000000
-McDonnell, F15 Eagle, 1,875 MPH, 3,450, 87700000
-Mikoyan, MiG25 FoxBat, 2171 MPH, 1560, 30000000
-Von, Zeppelin, 73 MPH, 16500, 21000000
-Airbus, Air Force One A380, 600 MPH, 7800, 660000000
-Lockheed. C-5M Super Galxy, 531 MPH, 225000000

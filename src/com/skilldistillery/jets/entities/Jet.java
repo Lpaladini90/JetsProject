@@ -1,46 +1,32 @@
-package jets;
+package com.skilldistillery.jets.entities;
 
 import java.util.Objects;
 
-public abstract class Jet {
+public abstract class Jet  {
 	private String make;
 	private String model;
 	private double speedMPH;
-	private double speedMach;
 	private int range;
 	private long purchasePrice;
 
 	public Jet() {
-		super();
 	}
 
-	
-
-	public Jet(String make, String model, double speedMPH, double speedMach, int range, long purchasePrice) {
+	public Jet(String make, String model, double speedMPH, int range, long purchasePrice) {
 		this.make = make;
 		this.model = model;
 		this.speedMPH = speedMPH;
-		this.speedMach = speedMach;
 		this.range = range;
 		this.purchasePrice = purchasePrice;
 	}
 
-
-
-	public void fly() {
-		// method that prints out the jet details and the amount of time the jet can fly
-		// until it runs out of fuel (based on speed and range)
-	}
-	
 	public String getMake() {
 		return make;
 	}
 
-
 	public void setMake(String make) {
 		this.make = make;
 	}
-
 
 	public String getModel() {
 		return model;
@@ -58,14 +44,6 @@ public abstract class Jet {
 		this.speedMPH = speedMPH;
 	}
 
-	public double getSpeedMach() {
-		return speedMach;
-	}
-
-	public void setSpeedMach(double speedMach) {
-		this.speedMach = speedMach;
-	}
-
 	public int getRange() {
 		return range;
 	}
@@ -81,21 +59,25 @@ public abstract class Jet {
 	public void setPurchasePrice(long purchasePrice) {
 		this.purchasePrice = purchasePrice;
 	}
+	
+	//make a fly method that displays a noise with the fly method when fly is called
 
 	@Override
 	public String toString() {
-		return "Jet [model=" + model + ", speedMPH=" + speedMPH + ", speedMach=" + speedMach + ", range=" + range
-				+ ", purchasePrice=" + purchasePrice + "]";
+		String output = "Jet: " + getMake() + " | " + getModel() + " | " + getSpeedMPH() + " | " + getRange() + " | "
+				+ getPurchasePrice();
+		return output;
 	}
 
-
+	public String makeModel() {
+		String output = getMake() + " " + getModel();
+		return output;
+	}
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(make, model, purchasePrice, range, speedMPH, speedMach);
+		return Objects.hash(make, model, purchasePrice, range, speedMPH);
 	}
-
-
 
 	@Override
 	public boolean equals(Object obj) {
@@ -108,12 +90,6 @@ public abstract class Jet {
 		Jet other = (Jet) obj;
 		return Objects.equals(make, other.make) && Objects.equals(model, other.model)
 				&& purchasePrice == other.purchasePrice && range == other.range
-				&& Double.doubleToLongBits(speedMPH) == Double.doubleToLongBits(other.speedMPH)
-				&& Double.doubleToLongBits(speedMach) == Double.doubleToLongBits(other.speedMach);
+				&& Double.doubleToLongBits(speedMPH) == Double.doubleToLongBits(other.speedMPH);
 	}
-
-	
-	
-	
-	
 }
